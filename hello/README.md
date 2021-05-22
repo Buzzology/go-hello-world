@@ -14,6 +14,9 @@ Add go install directory to path: `set PATH="%PATH%;C:\Users\Chris\go\bin\hello.
 Change install directory: `$ go env -w GOBIN=C:\path\to\your\bin`
 Install package: `go install` _from the hello directory_
 
+### Dependencies
+https://golang.org/doc/modules/managing-dependencies  
+
 ### TODO: Investigate
 #### Greetings order not preserved
 Go maps don't preserve order. Normally use a slice or array instead. See https://stackoverflow.com/a/28931555/522859.
