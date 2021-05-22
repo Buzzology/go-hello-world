@@ -17,6 +17,21 @@ func main() {
 		log.Fatal(err)
 	}
 
+	// Display a slice of greetings this time
+	messages, err := greetings.Hellos([]string {
+		"Batman",
+		"Flash",
+		"Superman",
+	})
+
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	for _, greeting := range messages {
+		fmt.Println(greeting)
+	}
+
 	// No errors, safe to print
 	fmt.Println(message)
 }

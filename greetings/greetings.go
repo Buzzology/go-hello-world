@@ -19,6 +19,25 @@ func Hello(name string) (string, error) {
 	return message, nil
 }
 
+// Returns a map of people to greeting messages
+func Hellos(names []string) (map[string]string, error) {
+	// A map to associate names with messages.
+	messages := make(map[string]string)
+
+	// Generate a greeting for each name. We don't need the index so it is discarded
+	for _, name := range names {
+		message, err := Hello(name)
+		if err != nil {
+			return nil, err
+		}
+
+		// Associate retrieved message with name
+		messages[name] = message
+	}
+
+	return messages, nil
+}
+
 
 // Go runs init functions automatically at program startup after global vars initialised.
 func init() {
