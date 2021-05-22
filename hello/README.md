@@ -1,5 +1,6 @@
-# Hello world tutorial
+# Go Hello world tutorial
 https://golang.org/doc/tutorial/getting-started
 
-## Install modules
-go mod tidy
+## Useful commands 
+
+Install modules: `go mod tidy`
