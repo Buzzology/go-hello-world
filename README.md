@@ -2,6 +2,7 @@
 https://golang.org/doc/tutorial/getting-started
 
 ## Useful commands 
+Create mod file: `go mod init github.com/buzzology/go-hello-world`  
 Install modules: `go mod tidy`  
 Run tests: `go test` or `go test -v` for verbose  
 
